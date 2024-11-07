@@ -9,4 +9,8 @@ app.get('/', (req, res) => {
     res.send('Hello, World!');
  });
 
+app.get('/book', (req, res) => {
+    res.status(200).send({ message:"You want a book?" });
+})
+
  app.listen(port);
